@@ -22,7 +22,7 @@ pipeline {
                     if (!nodeInstalled) {
                         // Install Node.js and npm (for Ubuntu/Debian)
                         sh '''
-                        sudo yum update
+                        sudo yum update -y
                         sudo yum install -y nodejs npm
                         '''
                     }
